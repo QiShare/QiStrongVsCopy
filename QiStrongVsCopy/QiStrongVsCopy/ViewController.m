@@ -8,13 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     // 第一种场景：用NSString直接赋值
@@ -29,8 +26,7 @@
     NSLog(@"strongStr: %p , %p , %@", _strongStr, &_strongStr, _strongStr);
     NSLog(@" copyyStr: %p , %p , %@", _copyyStr, &_copyyStr, _copyyStr);
     
-    NSLog(@"");
-    NSLog(@"-----------------QiShare分割线---------------------");
+    NSLog(@"---------------QiShare分割线-----------------\n");
     
     
     // 第二种场景：用NSMutableString直接赋值
@@ -47,8 +43,7 @@
     NSLog(@"strongStr: %p , %p , %@", _strongStr, &_strongStr, _strongStr);
     NSLog(@" copyyStr: %p , %p , %@", _copyyStr, &_copyyStr, _copyyStr);
     
-    NSLog(@"");
-    NSLog(@"-----------------QiShare分割线---------------------");
+    NSLog(@"---------------QiShare分割线-----------------\n");
     
     
     // 第三种场景：用NSMutableString点语法赋值
@@ -65,8 +60,8 @@
     NSLog(@"strongStr: %p , %p , %@", _strongStr, &_strongStr, _strongStr);
     NSLog(@" copyyStr: %p , %p , %@", _copyyStr, &_copyyStr, _copyyStr);
     
-    NSLog(@"");
-    NSLog(@"-----------------QiShare分割线---------------------");
+    NSLog(@"---------------QiShare分割线-----------------\n");
+    
     
     // 第四种场景：用NSString点语法赋值
     NSString *originStr4 = [NSString stringWithFormat:@"hello,everyone"];
@@ -80,12 +75,5 @@
     NSLog(@"strongStr: %p , %p , %@", _strongStr, &_strongStr, _strongStr);
     NSLog(@" copyyStr: %p , %p , %@", _copyyStr, &_copyyStr, _copyyStr);
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

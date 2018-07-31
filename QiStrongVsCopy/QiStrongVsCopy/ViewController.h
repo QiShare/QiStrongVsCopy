@@ -11,10 +11,8 @@
 @interface ViewController : UIViewController
 
 @property(nonatomic, strong) NSString *strongStr;
-
 @property(nonatomic, copy) NSString *copyyStr;
 // 注：不能以alloc，new，copy，mutableCopy 作为开头命名，比如：copyStr
-
 
 @end
 
